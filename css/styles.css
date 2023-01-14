@@ -1,4 +1,158 @@
+:root {
+  --action-color: #2196f3;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --font-color: #212121;
+  --description-color: #757575;
+  --footer-contact-color: #99ffffff;
+  --button-background-color: #f5f4fa;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--font-color);
+  background-color: var(--main-background-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--action-color);
+  color: #ffffff;
+}
+a:visited,
+a:link,
+a:hover {
+  text-decoration: none;
+}
+
+.button-main {
+  background-color: var(--action-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--button-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navigation_item:hover,
+.navigation_item:focus,
+.contact-header_item:hover,
+.contact-header_item:focus,
+.contact-footer_item:hover,
+.contact-footer_item:focus {
+  color: var(--action-color);
+}
+
+.logo--start {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logo-part {
+  color: var(--action-color);
+}
+
+.navigation_item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.contact-header_item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--description-color);
+}
+
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff;
+}
+
+.introduction_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.introduction_description {
+  color: var(--description-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.team_name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team_description {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--description-color);
+}
+
+.project_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.project_description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--description-color);
+}
+
+.logo--end {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #ffffff;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+.solgan-section {
+  background-color: var(--footer-background-color);
+}
+
+.contact-footer_address {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.contact-footer_item {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-contact-color);
 }

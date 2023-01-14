@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="/"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html">Agencja</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="/Kontakt">Kontakt</a></li>
+        <a href="/" class="logo logo--start"><span>Web</span>Studio</a>
+        <ul class="navigation">
+          <li><a href="./index.html" class="navigation_item">Agencja</a></li>
+          <li>
+            <a href="./portfolio.html" class="navigation_item">Portfolio</a>
+          </li>
+          <li><a href="/Kontakt" class="navigation_item">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="contact-header">
+        <li class="contact-header_item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-header_item">
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
     <main>
       <section>
         <ul>
-          <li><button type="button">Wszystkie</button></li>
-          <li><button type="button">Strony</button></li>
-          <li><button type="button">Aplikacje</button></li>
-          <li><button type="button">Dizajn</button></li>
-          <li><button type="button">Marketing</button></li>
+          <li><button type="button" class="button">Wszystkie</button></li>
+          <li><button type="button" class="button">Strony</button></li>
+          <li><button type="button" class="button">Aplikacje</button></li>
+          <li><button type="button" class="button">Dizajn</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
         </ul>
       </section>
-      <section>
+      <section class="project">
         <ul>
           <li>
             <img
@@ -40,9 +47,9 @@
               width="370"
               height="294"
             />
-            <h3>Technocrack</h3>
+            <h3 class="project_name">Technocrack</h3>
             <br />
-            <p>Strona internetowa</p>
+            <p class="project_description">Strona internetowa</p>
           </li>
           <li>
             <img
@@ -51,9 +58,9 @@
               width="370"
               height="294"
             />
-            <h3>Grafika New Orlean vs Golden Star</h3>
+            <h3 class="project_name">Grafika New Orlean vs Golden Star</h3>
             <br />
-            <p>Dizajn</p>
+            <p class="project_description">Dizajn</p>
           </li>
           <li>
             <img
@@ -62,9 +69,9 @@
               width="370"
               height="294"
             />
-            <h3>Restauracja Seafood</h3>
+            <h3 class="project_name">Restauracja Seafood</h3>
             <br />
-            <p>Aplikacja</p>
+            <p class="project_description">Aplikacja</p>
           </li>
           <li>
             <img
@@ -73,9 +80,9 @@
               width="370"
               height="294"
             />
-            <h3>Projekt Prime</h3>
+            <h3 class="project_name">Projekt Prime</h3>
             <br />
-            <p>Marketing</p>
+            <p class="project_description">Marketing</p>
           </li>
           <li>
             <img
@@ -84,9 +91,9 @@
               width="370"
               height="294"
             />
-            <h3>Projekt Boxes</h3>
+            <h3 class="project_name">Projekt Boxes</h3>
             <br />
-            <p>Aplikacja</p>
+            <p class="project_description">Aplikacja</p>
           </li>
           <li>
             <img
@@ -95,9 +102,9 @@
               width="370"
               height="294"
             />
-            <h3>Inspiration has no Borders</h3>
+            <h3 class="project_name">Inspiration has no Borders</h3>
             <br />
-            <p>Strona internetowa</p>
+            <p class="project_description">Strona internetowa</p>
           </li>
           <li>
             <img
@@ -106,9 +113,9 @@
               width="370"
               height="294"
             />
-            <h3>Magazyn Limited Edition</h3>
+            <h3 class="project_name">Magazyn Limited Edition</h3>
             <br />
-            <p>Dizajn</p>
+            <p class="project_description">Dizajn</p>
           </li>
           <li>
             <img
@@ -117,9 +124,9 @@
               width="370"
               height="294"
             />
-            <h3>Projekt LAB</h3>
+            <h3 class="project_name">Projekt LAB</h3>
             <br />
-            <p>Marketing</p>
+            <p class="project_description">Marketing</p>
           </li>
           <li>
             <img
@@ -128,20 +135,26 @@
               width="370"
               height="294"
             />
-            <h3>Growing Business</h3>
+            <h3 class="project_name">Growing Business</h3>
             <br />
-            <p>Aplikacja</p>
+            <p class="project_description">Aplikacja</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="/"><span>Web</span>Studio</a> <br />
-      <address>
+      <a href="/" class="logo logo--end"><span>Web</span>Studio</a> <br />
+      <address class="contact-footer">
         <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111 </a></li>
+          <li class="contact-footer_address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </li>
+          <li class="contact-footer_item">
+            <a href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="contact-footer_item">
+            <a href="tel:+48111111111">+48 111 111 111 </a>
+          </li>
         </ul>
       </address>
     </footer>
